@@ -1,16 +1,13 @@
-import abc
-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 
-class BaseScreen(abc.ABC):
+class BaseScreen:
 
     def __init__(self, driver):
         self.driver = driver
         self._verify_screen()
 
-    @abc.abstractmethod
     def _verify_screen(self):
         pass
 

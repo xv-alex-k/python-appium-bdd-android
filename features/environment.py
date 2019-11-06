@@ -5,7 +5,7 @@ def before_all(context):
     desired_caps = {"platformName": "Android",
                     "deviceName": "Android Emulator",
                     "appPackage": "com.instagram.android",
-                    "appActivity": "com.instagram.mainactivity.MainActivity",
+                    "appActivity": "com.instagram.mainactivity.LauncherActivity",
                     "automationName": "UiAutomator2"}
     executor_url = "http://localhost:4723/wd/hub"
     context.driver = webdriver.Remote(executor_url, desired_caps)
